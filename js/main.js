@@ -7,20 +7,14 @@ multiline
 comment
 
 */
-const gallery = document.getElementById('gallery');
-const popup = document.getElementById('popup');
-const selectedImage = documet.getElementById('selectedImage');
-const imageIndexes = [1,2,3,4];
-const selectedIndex = null;
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
 
-imageIndexes.forEach(i =>{
-    const image = document.createElement('img');
-    image.src= '/images/cars.jpg';
-    image.classList.add('galleryImg');
-    gallery.appendChild(image);
-    addEventListener('click',() =>{
-        //popup stuff
+function openFullImg(pic) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+}
 
-        
-    })
-});
+function closeFullImg() {
+    fullImgBox.style.display = "none";
+}
