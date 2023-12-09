@@ -110,6 +110,7 @@ form button {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 10px
 }
 
 .flex-header {
@@ -120,6 +121,9 @@ form button {
 
 /* Responsive media queries */
 @media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 14px;
+  }
   .img-gallery {
     flex-direction: column;
   }
