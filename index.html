@@ -14,20 +14,21 @@
 </head>
 
 <body>
+  
   <header>
-    <div>
+    <div class="container flex-header">
         <h1>Electric Cars For Our Future</h1>
         <nav>
           <!--switch between pages-->
           <a href="/" class="active">Home</a>
           <a href="page2.html">Get Involved</a>
         </nav>
-    </div>
+      </div>
   </header>
   <!-- Endof Header-->
 
   <!-- Start of Main-->
-  <main class="content">
+  <main class="content container">
     <!--About Section-->
     <section class="about">
       <h2>About us</h2>
@@ -46,14 +47,14 @@
   <section class="gallery">
       <h4>Click on image to view full</h4>
   <div class="popup" id="fullImgBox">
-    <img src="images/cars.jpg" id="fullImg" alt="Photo description">
+    <img src="images/cars.webp" id="fullImg" alt="Photo description">
     <span onclick="closeFullImg()">✖</span>
 </div>
 <div class="img-gallery">
-    <img src="images/cars.jpg" alt="Photo 1 description" onclick="openFullImg(this.src)">
+    <img src="images/cars.webp" alt="Photo 1 description" onclick="openFullImg(this.src)">
     <img src="images/carsmoke.webp" alt="Photo 2 description" onclick="openFullImg(this.src)">
     <img src="images/petrol.webp" alt="Photo 3 description" onclick="openFullImg(this.src)">
-    <img src="images/protest.jpg" alt="Photo 4 description" onclick="openFullImg(this.src)">
+    <img src="images/protest.webp" alt="Photo 4 description" onclick="openFullImg(this.src)">
 </div>
   </section>
 </main>
@@ -61,9 +62,11 @@
 
   <!-- Start of Footer-->
   <footer>
-    <p class="foot">&copy; 2023 CarsForOurFuture</p>
+    <div class="container">
+      <p class="foot">&copy; 2023 CarsForOurFuture</p>
+    </div>
+    
 </footer>
-  <!-- End of Main-->
   
 </body>
 </html>
