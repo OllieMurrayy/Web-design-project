@@ -15,6 +15,7 @@ header {
 footer {
   background-color: aquamarine;
   padding: 10px;
+  margin-top: 40px;
 }
 
 footer p {
@@ -37,8 +38,31 @@ a.active {
   font-weight: 600;
 }
 
+/* Image Gallery styles */
 .popup {
   display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.88);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.popup img {
+  width: 90%;
+  max-width: 1440px;
+  margin: 20px auto;
+}
+
+.popup span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 34px;
+  cursor: pointer;
+  color: white;
 }
 
 .img-gallery {
@@ -49,27 +73,45 @@ a.active {
 .img-gallery img {
   width: 320px;
   height: auto;
+  cursor: pointer;
 }
 
+/* Form styling */
 form {
-    border: 2px solid blue;
-    border-radius: 2px;
-    width: 600px;
+  max-width: 600px;
 }
 
-.field {
+form fieldset {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
 
-.input {
+form legend {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+form input, form textarea {
+  margin-bottom: 14px;
+  padding: 5px;
+}
+
+form button {
+  padding: 8px;
+  border: 2px solid black;
+  background-color: blue;
+  color: white;
+  border-radius: 6px;
+}
+
+form input {
   display: block;
   border: 2px solid black;
   border-radius: 4px;
 }
 
-.input[type=text]:focus {
+form input[type=text]:focus {
   border: 2px solid blue;
   border-radius: 4px;
 }
@@ -79,32 +121,18 @@ form {
   border-radius: 4px;
 }
 
-.input.success input {
+form input.success input {
   border-color: greenyellow;
 }
 
-.input.error input {
+form input.error input {
   border-color: red;
 }
 
-.input .error {
+form .error {
 color: red;
 }
 
-.textarea {
-display: block;
-border: 2px solid black;
-border-radius: 4px;
-height: 100px;
-width: 500px;
-}
-
-form button {
-  border: 2px solid black;
-  background-color: blue;
-  color: white;
-  border-radius: 6px;
-}
 
 /* helper classes */
 .container {

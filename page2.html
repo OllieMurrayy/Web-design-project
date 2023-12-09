@@ -12,16 +12,17 @@
 </head>
 <body>
         <header>
-            <div>
+            <div class="container flex-header">
                 <h1>Electric Cars For Our Future</h1>
                 <nav>
-                <a href="index.html">Home</a>
-                <a href="/" class="active">Get Involved</a>
+                  <!--switch between pages-->
+                  <a href="/" class="active">Home</a>
+                  <a href="page2.html">Get Involved</a>
                 </nav>
-            </div>
+              </div>
         </header>
 
-        <main class="content">
+        <main class="content container">
             <section class="Get Involved">
                 <h2>Want To Get Involved?</h2>
                 <p>
@@ -30,33 +31,36 @@
             </section>
             
         
-        <!--Form Section-->
-            <section class="form">
-                <h3>Form</h3>
-                <form id="form" action="/">
-                    <div class="field">
-                        <label for="firstname">First Name:</label>
-                        <input type="text" id="firstname" name="firstname">
-                    <div class="error"></div>
-                        <label for="lastname">Last Name:</label>
-                        <input type="text" id="lastname" name="lastname">
-                    <div class="error"></div>
-                        <label for="phonenum">Phone No:</label>
-                        <input type="text" id="phonenum" name="phonenum">
-                    <div class="error"></div>
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email">
-                    <div class="error"></div>
-                        <label for="comments">Comments:</label>
-                        <textarea></textarea>
-                    <div class="error"></div>
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p class="foot">&copy; 2023 CarsForOurFuture</p>
-        </footer>
+      <!--Form Section-->
+      <section class="form">
+
+        <form id="form" action="/">
+          <fieldset>
+            <legend>Form</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname">
+            <div class="error"></div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname">
+            <div class="error"></div>
+            <label for="phonenum">Phone No:</label>
+            <input type="text" id="phonenum" name="phonenum">
+            <div class="error"></div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <div class="error"></div>
+            <label for="comments">Comments:</label>
+            <textarea rows="6"></textarea>
+            <div class="error"></div>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+  </main>
+  <footer>
+      <div class="container">
+          <p class="foot">&copy; 2023 CarsForOurFuture</p>
+        </div>
+  </footer>
 </body>
 </html>

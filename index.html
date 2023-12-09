@@ -45,17 +45,21 @@
   </section>
   <!--photo gallery section-->
   <section class="gallery">
-      <h4>Click on image to view full</h4>
-  <div class="popup" id="fullImgBox">
-    <img src="images/cars.webp" id="fullImg" alt="Photo description">
-    <span onclick="closeFullImg()">✖</span>
-</div>
-<div class="img-gallery">
-    <img src="images/cars.webp" alt="Photo 1 description" onclick="openFullImg(this.src)">
-    <img src="images/carsmoke.webp" alt="Photo 2 description" onclick="openFullImg(this.src)">
-    <img src="images/petrol.webp" alt="Photo 3 description" onclick="openFullImg(this.src)">
-    <img src="images/protest.webp" alt="Photo 4 description" onclick="openFullImg(this.src)">
-</div>
+    <h4>Click on image to view full</h4>
+
+    <!-- Popup -->
+    <div class="popup" id="fullImgBox">
+      <img src="images/cars.webp" id="fullImg" alt="Photo description">
+      <span onclick="closeFullImg()">✖</span>
+    </div>
+
+    <!-- Gallery of images -->
+    <div class="img-gallery">
+      <img src="images/cars.webp" alt="Photo 1 description" onclick="openFullImg(this.src)">
+      <img src="images/burnout.webp" alt="Photo 2 description" onclick="openFullImg(this.src)">
+      <img src="images/petrol.webp" alt="Photo 3 description" onclick="openFullImg(this.src)">
+      <img src="images/protest.webp" alt="Photo 4 description" onclick="openFullImg(this.src)">
+    </div>
   </section>
 </main>
   <!-- End of Main-->
@@ -64,8 +68,7 @@
   <footer>
     <div class="container">
       <p class="foot">&copy; 2023 CarsForOurFuture</p>
-    </div>
-    
+    </div> 
 </footer>
   
 </body>
