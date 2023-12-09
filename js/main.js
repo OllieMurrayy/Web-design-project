@@ -1,12 +1,4 @@
-// This is a single line comment
-
-/*
-
-This is a
-multiline
-comment
-
-*/
+// Image gallery popup
 var fullImgBox = document.getElementById("fullImgBox");
 var fullImg = document.getElementById("fullImg");
 
@@ -19,6 +11,7 @@ function closeFullImg() {
     fullImgBox.style.display = "none";
 }
 
+// form validation
 const form = document.getElementById("form");
 const firstname = document.getElementById("firstname");
 const lastname = document.getElementById("lastname");
@@ -67,7 +60,7 @@ const validateInputs = () => {
         setSuccess(firstname);
     }
     
-    if (secondnameValue === "") {
+    if (lastnameValue === "") {
         setError(lastname, "Last name is required")
     } else {
         setSuccess(lastname);

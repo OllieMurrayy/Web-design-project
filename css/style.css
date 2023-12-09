@@ -85,6 +85,7 @@ form fieldset {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  border: none;
 }
 
 form legend {
@@ -97,7 +98,7 @@ form input, form textarea {
   padding: 5px;
 }
 
-form button {
+form button[type=submit] {
   padding: 8px;
   border: 2px solid black;
   background-color: blue;
@@ -121,11 +122,11 @@ form input[type=text]:focus {
   border-radius: 4px;
 }
 
-form input.success input {
+form .success input {
   border-color: greenyellow;
 }
 
-form input.error input {
+form .error input {
   border-color: red;
 }
 
